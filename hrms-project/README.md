@@ -1,6 +1,6 @@
 # Uml Diagram
 
- ![image](C:\Users\burak\Desktop\uml_diagram.PNG)
+ ![image](https:/Users/burak/Desktop/uml_diagram.PNG)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
