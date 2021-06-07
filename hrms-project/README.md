@@ -1,6 +1,7 @@
 # Uml Diagram
 
-![alt text](Destkop://uml_diagram.png)
+![uml_diagram](https://user-images.githubusercontent.com/74312392/121052975-8e025600-c7c3-11eb-86b4-5cd9dbc6665b.PNG)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
