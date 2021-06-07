@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 # Uml Diagram
 
 ![alt text](Destkop://uml_diagram.png)
+=======
+# Hrms-Frontend
+# Uml Diagram
+
+![uml_diagram](https://user-images.githubusercontent.com/74312392/121052975-8e025600-c7c3-11eb-86b4-5cd9dbc6665b.PNG)
+
+>>>>>>> c5b12efc64c76082bccd0abfc9cc135466ebb000
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
