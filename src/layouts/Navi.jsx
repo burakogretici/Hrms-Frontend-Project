@@ -1,24 +1,32 @@
-import React from "react";
-import { Button, Container, Dropdown, Menu } from "semantic-ui-react";
+import React,{useState} from "react";
+import {Container,Menu } from "semantic-ui-react";
+import { useHistory } from "react-router";
+import SignedIn from "./SignedIn";
+import SignedOut from "./SignedOut";
+import Application from "./Application";
 
 export default function Navi() {
+  const [isAuthenticated, setIsAuthenticated] = useState(true)
+  const history= useHistory()
+
+  function handleSignOut(){
+    setIsAuthenticated(false)
+    history.push("/")
+    
+  }
+
+  function handleSignIn() {
+    setIsAuthenticated(true)
+  }
+
   return (
     <div>
       <Menu inverted fixed="top">
         <Container>
           <Menu.Item name="home" />
           <Menu.Menu position="right">
-            <Dropdown item text="Employer">
-              <Dropdown.Menu >
-                <Dropdown.Item>Sign Up</Dropdown.Item>
-                <Dropdown.Item>Sign In</Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-
-            <Menu.Item  >
-              <Button color="red">Sign Up</Button>
-              <Button color="green">Sign In</Button>
-            </Menu.Item>
+            <Application/>
+            {isAuthenticated?<SignedIn signOut={handleSignOut}/>:<SignedOut signIn={handleSignIn}/>}
           </Menu.Menu>
         </Container>
       </Menu>
