@@ -4,6 +4,7 @@ import { useHistory } from "react-router";
 import SignedIn from "./SignedIn";
 import SignedOut from "./SignedOut";
 import Application from "./Application";
+import { NavLink } from "react-router-dom";
 
 export default function Navi() {
   const [isAuthenticated, setIsAuthenticated] = useState(true)
@@ -23,7 +24,8 @@ export default function Navi() {
     <div>
       <Menu inverted fixed="top">
         <Container>
-          <Menu.Item name="home" />
+          <Menu.Item name="Hrms" />
+          <Menu.Item name="Job Adverts" as={NavLink} to="/JobAdverts"/>
           <Menu.Menu position="right">
             <Application/>
             {isAuthenticated?<SignedIn signOut={handleSignOut}/>:<SignedOut signIn={handleSignIn}/>}

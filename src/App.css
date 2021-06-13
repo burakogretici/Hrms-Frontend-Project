@@ -33,8 +33,8 @@ footer {
   margin-top: 95px;
   padding: 75px;
   border-top: 5px solid var(--primaryColor);
-  background-color: #fff;
-  box-shadow: 0 10px 76px -12px rgba(0, 29, 147, 0.1);
+  background-color: rgba(185, 172, 172, 0.842);
+  box-shadow: 0 10px 76px -12px rgba(27, 27, 27, 0.1);
 }
 .footer .footer-top {
   display: flex;
@@ -103,4 +103,6 @@ footer {
 }
 
 
-
+.filter{
+  margin-top: 17px;
+}

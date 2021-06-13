@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {Link} from "react-router-dom";
 import { Icon, Menu, Table } from "semantic-ui-react";
 import JobAdvertService from "../../services/jobAdvertService";
+import './JobAdvertList.css';
 
 const colors = ["red"];
 
@@ -16,7 +17,7 @@ export default function JobAdvertList() {
   }, []);
 
   return (
-    <div>
+    <div className="jobAdvertList">
       {colors.map((color) => (
         <Table color={color} key={color}>
           <Table.Header>
