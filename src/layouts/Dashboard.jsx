@@ -9,6 +9,7 @@ import JobAdvertDetail from "../pages/JobAdvert/JobAdvertDetail";
 import Login from "../pages/Auth/Login";
 import JobSeekerRegister from "../pages/Auth/JobSeeker/JobSeekerRegister";
 import Filter from "./Filter";
+import JobAdvertAdd from "../pages/JobAdvert/JobAdvertAdd";
 
 export default function Dashboard() {
   return (
@@ -22,6 +23,7 @@ export default function Dashboard() {
             <Route exact path="/" component={JobAdvertList} />
             <Route exact path="/jobAdverts" component={JobAdvertList} />
             <Route path="/jobAdverts/:id" component={JobAdvertDetail} />
+            <Route path="/jobAdvertAdd" component={JobAdvertAdd} />
             <Route path="/positions" component={PositionList} />
             <Route path="/employers" component={EmployerList} />
             <Route path="/application" component={ApplicationDetail} />

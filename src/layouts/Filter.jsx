@@ -16,7 +16,7 @@ export default function Filter() {
   const [wayOfWorkings, setWayOfWorkings] = useState([]);
   useEffect(() => {
     let wayOfWorkingService = new WayOfWorkingService();
-    wayOfWorkingService.getWayOfWorkings().then((result) => {
+    wayOfWorkingService.getWaysOfWorking().then((result) => {
       setWayOfWorkings(result.data.data);
     });
   }, []);

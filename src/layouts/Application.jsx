@@ -7,7 +7,7 @@ export default function Application() {
     <div>
       <Dropdown item text="Applications">
         <Dropdown.Menu>
-          <Dropdown.Item>Job Adverts</Dropdown.Item>
+          <Dropdown.Item as={NavLink} to ="/jobAdvertAdd">İş İlanı Ekle</Dropdown.Item>
           <Dropdown.Item>Employers</Dropdown.Item>
 
           <Dropdown.Divider/>
